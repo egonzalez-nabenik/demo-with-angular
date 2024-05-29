@@ -1,0 +1,13 @@
+<div class="container pt-5">
+    <form class="form">
+        <div class="form-group mb-3">
+            <label for="username">Usuario</label>
+            <input [(ngModel)]="loginUsername" id="username" name="username" class="form-control" type="text" placeholder="Ingresa tu email">
+        </div>
+        <div class="form-group mb-3">
+            <label for="password">Contraseña</label>
+            <input [(ngModel)]="loginPassword" id="password" name="password" class="form-control" type="password" placeholder="Ingresa tu contraseña">
+        </div>
+        <button (click)="doLogin()" type="button" class="btn btn-primary">Iniciar sesión</button>
+    </form>
+</div>
